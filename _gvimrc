@@ -1,0 +1,27 @@
+au GUIEnter * simalt ~x
+set hls
+set is
+set cb=unnamed
+set guifont=Consolas:h11
+set ts=4
+set sw=4
+set si
+cd C:\Users\chris\Desktop
+inoremap { {}<Left>
+inoremap {<CR> {<CR>}<Esc>O
+inoremap {{ {
+inoremap {} {}
+set nu
+augroup numbertoggle
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave * set rnu
+    autocmd BufLeave,FocusLost,InsertEnter * set nornu
+augroup END
+let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
+imap <C-BS> <C-W>
+autocmd filetype cpp nnoremap <F12> :w <bar> !g++ -std=c++17 % && a.exe && del a.exe<CR>
+set guioptions=Ace
+colorscheme Shine
+set nobackup
+set nowritebackup
+set noundofile
