@@ -6,7 +6,7 @@ set guifont=Consolas:h11
 set ts=4
 set sw=4
 set si
-cd C:\Users\chris\Desktop
+cd C:\Users\chris\Desktop\CP
 inoremap { {}<Left>
 inoremap {<CR> {<CR>}<Esc>O
 inoremap {{ {
@@ -20,3 +20,4 @@ colorscheme torte
 set nobackup
 set nowritebackup
 set noundofile
+autocmd BufNewFile *.cpp execute "0r ~\\template.cpp"
