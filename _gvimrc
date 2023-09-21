@@ -16,7 +16,7 @@ let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 imap <C-BS> <C-W>
 autocmd filetype cpp nnoremap <F12> :w <bar> !g++ -std=c++17 % && a.exe && del a.exe<CR>
 set guioptions=Ace
-colorscheme Shine
+colorscheme torte
 set nobackup
 set nowritebackup
 set noundofile
