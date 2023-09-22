@@ -1,12 +1,12 @@
 au GUIEnter * simalt ~x
 set hls
 set is
-set cb=unnamed
+set cb=unnamedplus
 set guifont=Consolas:h11
 set ts=4
 set sw=4
 set si
-cd C:\Users\chris\Desktop\CP
+cd ~
 inoremap { {}<Left>
 inoremap {<CR> {<CR>}<Esc>O
 inoremap {{ {
@@ -14,10 +14,9 @@ inoremap {} {}
 set relativenumber
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 imap <C-BS> <C-W>
-autocmd filetype cpp nnoremap <F12> :w <bar> !g++ -std=c++17 % && a.exe && del a.exe<CR>
+autocmd filetype cpp nnoremap <F12> :w <bar> !g++ -std=c++20 % && ./a.out && rm -rf a.out<CR>
 set guioptions=Ace
-colorscheme torte
 set nobackup
 set nowritebackup
 set noundofile
-autocmd BufNewFile *.cpp execute "0r ~\\template.cpp"
+autocmd BufNewFile *.cpp execute "0r ~/.vim/template.cpp"
