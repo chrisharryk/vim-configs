@@ -2,7 +2,7 @@ au GUIEnter * simalt ~x
 set hls
 set is
 set cb=unnamedplus
-set guifont=Consolas:h11
+set guifont=FixedSys:h11
 set ts=4
 set sw=4
 set si
