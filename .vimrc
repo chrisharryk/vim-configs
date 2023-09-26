@@ -1,12 +1,11 @@
 au GUIEnter * simalt ~x
 set hls
 set is
-set cb=unnamedplus
+set cb=unnamed
 set ts=4
 set sw=4
 set si
-set guioptions=ace
-set guifont=FixedSys:h16
+set guifont=Consolas:h12
 cd ~/Desktop
 set relativenumber
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
