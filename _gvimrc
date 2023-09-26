@@ -1,4 +1,9 @@
+colorscheme shine
 au GUIEnter * simalt ~x
+inoremap { {}<Left>
+inoremap {<CR> {<CR>}<Esc>O
+inoremap {{ {
+inoremap {} {}
 set hls
 set is
 set cb=unnamed
@@ -10,7 +15,11 @@ cd ~/Desktop
 set relativenumber
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 imap <C-BS> <C-W>
+autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -std=c++17 % && a.exe && del a.exe<CR>
+autocmd filetype java nnoremap <F5> :w <bar> !javac % && java %:r && del %:r.class<CR>
 autocmd filetype python nnoremap <F5> :w <bar> !python %<CR>
 set nobackup
 set nowritebackup
 set noundofile
+autocmd BufNewFile *.cpp execute "0r ~\\template.cpp"
+autocmd BufNewFile *.java execute "0r ~\\Template.java"
