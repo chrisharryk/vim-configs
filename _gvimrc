@@ -12,7 +12,7 @@ set sw=4
 set si
 set guifont=FixedSys:h14
 cd ~/Desktop
-set relativenumber
+set nu 
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
 imap <C-BS> <C-W>
 autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -std=c++17 % && a.exe && del a.exe<CR>
