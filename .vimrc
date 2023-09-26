@@ -5,7 +5,7 @@ set cb=unnamed
 set ts=4
 set sw=4
 set si
-set guifont=Consolas:h12
+set guifont=FixedSys:h14
 cd ~/Desktop
 set relativenumber
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
