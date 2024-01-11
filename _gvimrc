@@ -1,18 +1,19 @@
-colorscheme shine
+colorscheme torte
 au GUIEnter * simalt ~x
 inoremap { {}<Left>
 inoremap {<CR> {<CR>}<Esc>O
 inoremap {{ {
 inoremap {} {}
+set backspace=indent,eol,start
 set hls
 set is
 set cb=unnamed
 set ts=4
 set sw=4
 set si
-set guifont=FixedSys:h14
+set guifont=Fira\ Mono:h12
 set guioptions=Ace
-cd ~/Desktop
+cd ~\OneDrive\Desktop
 set nu 
 set relativenumber
 let g:netrw_bufsettings = 'noma nomod nu nowrap ro nobl'
