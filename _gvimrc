@@ -11,6 +11,7 @@ set ts=4
 set sw=4
 set si
 set guifont=FixedSys:h14
+set guioptions=Ace
 cd ~/Desktop
 set nu 
 set relativenumber
