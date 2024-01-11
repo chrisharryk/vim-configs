@@ -1,3 +1,5 @@
+" for vim in wsl
+
 inoremap { {}<Left>
 inoremap {<CR> {<CR>}<Esc>O
 inoremap {{ {
@@ -25,3 +27,8 @@ if executable(s:clip)
     augroup END
 endif
 autocmd BufNewFile *.cc execute "0r ~/.template.cc"
+
+# add the vim plug calls for gvim
+call plug#begin()
+Plug 'preservim/nerdtree'
+call plug#end()
