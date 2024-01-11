@@ -1,4 +1,4 @@
-colorscheme torte
+colorscheme habamax
 au GUIEnter * simalt ~x
 inoremap { {}<Left>
 inoremap {<CR> {<CR>}<Esc>O
